@@ -1,0 +1,129 @@
+```html
+{% extends "base.html" %}
+
+{% block title %}
+Edit Profile - My Website
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-md-7">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body p-5">
+
+                <div class="text-center mb-4">
+
+                    <div class="display-5">
+                        ✏️
+                    </div>
+
+                    <h2 class="fw-bold mt-2">
+                        Edit Profile
+                    </h2>
+
+                    <p class="text-muted">
+                        Update your account information.
+                    </p>
+
+                </div>
+
+                <form method="post">
+
+                    {% csrf_token %}
+
+
+                    <!-- Username -->
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            Username
+                        </label>
+
+                        <input type="text"
+                               name="username"
+                               class="form-control"
+                               value="{{ user.username }}"
+                               required>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            Email
+                        </label>
+
+                        <input type="email"
+                               name="email"
+                               class="form-control"
+                               value="{{ user.email }}"
+                               required>
+
+                    </div>
+
+
+                    <!-- First Name -->
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            First Name
+                        </label>
+
+                        <input type="text"
+                               name="first_name"
+                               class="form-control"
+                               value="{{ user.first_name }}">
+
+                    </div>
+
+
+                    <!-- Last Name -->
+                    <div class="mb-4">
+
+                        <label class="form-label fw-bold">
+                            Last Name
+                        </label>
+
+                        <input type="text"
+                               name="last_name"
+                               class="form-control"
+                               value="{{ user.last_name }}">
+
+                    </div>
+
+
+                    <!-- Save -->
+                    <button type="submit"
+                            class="btn btn-primary w-100">
+                        💾 Save Changes
+                    </button>
+
+                </form>
+
+
+                <!-- Back -->
+                <div class="text-center mt-4">
+
+                    <a href="{% url 'profile' %}"
+                       class="btn btn-outline-secondary">
+                        ← Back to Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+```

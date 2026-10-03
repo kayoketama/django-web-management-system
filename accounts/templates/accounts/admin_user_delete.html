@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}
+Delete User - My Website
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-6">
+
+        <div class="card border-0 shadow-sm">
+
+            <div class="card-body p-5 text-center">
+
+                <div class="display-3 mb-3">
+                    ⚠️
+                </div>
+
+                <h1 class="fw-bold mb-3">
+                    Delete User
+                </h1>
+
+                <p class="text-muted">
+                    Are you sure you want to delete this user?
+                </p>
+
+                <div class="alert alert-warning">
+                    <strong>
+                        {{ user_detail.username }}
+                    </strong>
+                    will be permanently deleted.
+                </div>
+
+                <div class="d-flex justify-content-center gap-2 mt-4">
+
+                    <a href="{% url 'admin_users' %}"
+                       class="btn btn-secondary">
+                        Cancel
+                    </a>
+
+                    <form method="post"
+                          action="{% url 'admin_user_delete' user_detail.id %}">
+
+                        {% csrf_token %}
+
+                        <button type="submit"
+                                class="btn btn-danger">
+                            🗑️ Yes, Delete
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

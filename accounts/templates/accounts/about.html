@@ -1,0 +1,219 @@
+```html
+{% extends "base.html" %}
+
+{% block title %}
+About - My Website
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="text-center mb-5">
+
+    <div class="display-3 mb-3">
+        🌍
+    </div>
+
+    <h1 class="fw-bold">
+        About My Website
+    </h1>
+
+    <p class="lead text-muted">
+        A simple and secure Django web application.
+    </p>
+
+</div>
+
+
+<!-- About Section -->
+<div class="row justify-content-center">
+
+    <div class="col-lg-10">
+
+        <div class="card shadow border-0 mb-4">
+
+            <div class="card-body p-5">
+
+                <h3 class="fw-bold mb-3">
+                    💡 About the Project
+                </h3>
+
+                <p>
+                    This website is a web application built using
+                    <strong>Django</strong>, <strong>Python</strong>,
+                    and <strong>Bootstrap</strong>.
+                </p>
+
+                <p class="mb-0">
+                    It provides users with registration, login,
+                    profile management, password management, and
+                    contact functionality.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Features -->
+        <div class="card shadow border-0 mb-4">
+
+            <div class="card-body p-5">
+
+                <h3 class="fw-bold mb-4">
+                    🚀 Features
+                </h3>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <h5>
+                            👤 User Accounts
+                        </h5>
+
+                        <p class="text-muted">
+                            Users can register, login, logout,
+                            and manage their profiles.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <h5>
+                            🔐 Security
+                        </h5>
+
+                        <p class="text-muted">
+                            Authentication and password management
+                            help protect user accounts.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <h5>
+                            ✏️ Profile Management
+                        </h5>
+
+                        <p class="text-muted">
+                            Users can update their username,
+                            email, first name, and last name.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <h5>
+                            📧 Contact
+                        </h5>
+
+                        <p class="text-muted">
+                            Users can send messages through the
+                            contact form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Technologies -->
+        <div class="card shadow border-0 mb-4">
+
+            <div class="card-body p-5">
+
+                <h3 class="fw-bold mb-4">
+                    💻 Technologies
+                </h3>
+
+                <div class="d-flex flex-wrap gap-2">
+
+                    <span class="badge bg-primary fs-6 p-2">
+                        Python
+                    </span>
+
+                    <span class="badge bg-success fs-6 p-2">
+                        Django
+                    </span>
+
+                    <span class="badge bg-dark fs-6 p-2">
+                        Bootstrap
+                    </span>
+
+                    <span class="badge bg-secondary fs-6 p-2">
+                        HTML
+                    </span>
+
+                    <span class="badge bg-info text-dark fs-6 p-2">
+                        SQLite
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Goal -->
+        <div class="card shadow border-0">
+
+            <div class="card-body p-5 text-center">
+
+                <h3 class="fw-bold mb-3">
+                    🎯 Our Goal
+                </h3>
+
+                <p class="lead text-muted">
+                    To build a simple, secure, and user-friendly
+                    web application while learning modern web
+                    development with Django.
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn-success me-2">
+                        📧 Contact Us
+                    </a>
+
+                    <a href="{% url 'home' %}"
+                       class="btn btn-primary">
+                        🏠 Back to Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+```
+
+### Tarkaanfii 2
+
+Faayila save godhi, achiis:
+
+```text id="8t9q0m"
+http://127.0.0.1:8000/about/
+```
+
+bani.
+
+About page haaraan yoo sirriitti mul'ate, **`done`** jedhi.
