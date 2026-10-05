@@ -4,15 +4,12 @@ A full-stack web application built with Django for managing user accounts, profi
 
 ## Project Team
 
-## Project Team
-
-| Team Member     | Responsibility                                      |
-| --------------- | --------------------------------------------------- |
-| **Kayo Ketama** | Backend & Django Development                        |
-| **Habib Jemal** | Frontend Development & UI Design                    |
-| **Hamza**       | Database Management & Testing                       |
-| **Abdulaziz**   | Documentation, Deployment Support & Project Testing |
-
+| Team Member     | Responsibility                              |
+| --------------- | ------------------------------------------- |
+| **Kayo Ketama** | Backend & Django Development                |
+| **Habib Jemal** | Frontend Development & UI Design            |
+| **Hamza**       | Database Management & Testing               |
+| **Abdulaziz**   | Documentation, Testing & Deployment Support |
 
 ## The Problem
 
@@ -157,7 +154,7 @@ http://localhost:8000/
 
 ### Project Recording
 
-**[Watch the Project Demo](PASTE-YOUR-RECORDING-LINK-HERE)**
+**[Watch the Project Demo](https://drive.google.com/file/d/1hv-An7-jsmeoMCf-mQC6zBjOca6yWEPw/view?usp=drive_link)**
 
 The recording demonstrates the main user workflow and administrative features of the application.
 
@@ -181,37 +178,36 @@ Responsible for the core Django development and backend functionality, including
 
 ### Habib Jemal
 
-Responsible for the frontend and user interface, including:
+Responsible for the frontend development and user interface, including:
 
 * Designing and organizing web pages
-* HTML and CSS implementation
-* Bootstrap-based responsive layouts
+* Implementing HTML and CSS
+* Building responsive layouts with Bootstrap
 * Navigation and page structure
-* User-facing forms and interface elements
-* Improving the overall usability of the application
+* User-facing forms and interface components
+* Improving the overall usability and consistency of the application
 
 ### Hamza
 
-Responsible for database-related tasks and application testing, including:
+Responsible for database management and application testing, including:
 
 * Database structure and configuration
-* Working with Django models and migrations
-* Testing user registration and authentication workflows
+* Django models and database migrations
+* Testing user registration and authentication
 * Testing administrative features
 * Identifying and reporting application issues
-* Verifying that major features work as expected
+* Verifying the functionality of major application features
 
 ### Abdulaziz
 
-Responsible for documentation, testing support, and deployment-related tasks, including:
+Responsible for project documentation, testing support, and deployment assistance, including:
 
-* Project documentation
-* README preparation and updates
+* Maintaining project documentation
+* Preparing and updating the README
 * Testing application workflows
 * Supporting deployment configuration
 * Reviewing the application before submission
-* Helping verify that the deployed application works correctly
-
+* Verifying the deployed application and its major features
 
 ## What We Would Build Next
 
